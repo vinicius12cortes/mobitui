@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Criar Coleção e Adicionar Dado no Firestore</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <h1>Adicionar Dados ao Firestore</h1>
+    <form id="meuFormulario">
+        <div class="texto"> 
+            <label for="tagVideo">Código de incorporação do Vídeo do YouTube:</label>
+        </div>
+        <input type="text" id="tagVideo" name="tagVideo" required>
+        <button type="submit">Salvar</button>
+        <h2>Vídeos Salvos:</h2>
+    <ul id="videosSalvos" class="video-list"></ul>
+    </form>
+    
+
+    
+
+    <!-- Adicione a biblioteca do Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-firestore.js"></script>
+
+    <!-- Incluir o script JavaScript -->
+    <script src="java.js"></script>
+</body>
+
+</html>
